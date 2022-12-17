@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX - Hire Us</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./logo.png" alt="SpaceX Logo">|
+            <a href="./spaceships.html" target="_self">The Spaceships</a> |
+            <a href="./hireus.html" target="_self">Hire Us</a>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <div>
+            <h3>Hire Us Now</h3>
+            <p>Leave a message to request one of our services and we will get back to you as soon as possible.</p>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">- Email</label>
+                    <input type="email">
+                </div><br>
+                <div>
+                    <label for="spaceship">Spaceship:</label>
+                    <select name="spaceship" id="spaceship">
+                        <option value="falcon9">Falcon 9</option>
+                        <option value="falconheavy">Falcon Heavy</option>
+                    </select>
+                    <label for="service">Type of service:</label>
+                    <input type="search" name="service" id="service" list="services">
+                    <datalist id="services">
+                        <option value="Sed ut perspiciatis unde omnis iste natus error">Sed ut  perspiciatis unde omnis iste natus error</option>
+                        <option value="At vero eos et accusamus et iusto odio dignissimos ducimus">At vero  eos et accusamus et iusto odio dignissimos ducimus</option>
+                        <option value="Et harum quidem rerum facilis est et expedita distinctio">Et harum   quidem rerum facilis est et expedita distinctio</option>
+                        <option value="Nam libero tempore, cum soluta nobis est eligendi">Nam libero    tempore, cum soluta nobis est eligendi</option>
+                    </datalist>
+                </div>
+                <div>
+                    <input type="submit" value="Send message">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
