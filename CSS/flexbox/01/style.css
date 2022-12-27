@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav{
+    display: flex;
+    background-color: #000;
+    height: 50px;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo1{
+    width: 50px;
+}
+
+.logo2{
+    width: 500px;
+}
+
+.buttons{
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn{
+    background-color: transparent;
+    color: #FFF;
+    border: 2px solid #FFF;
+    padding: 10px;
+    border-radius: 0.65rem;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #AAA;
+    color: #000;
+}
