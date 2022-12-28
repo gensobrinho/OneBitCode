@@ -1,31 +1,37 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
 .container{
+    display: grid;
     background-color: darkgray;
     min-height: 100vh;
+}
+
+.header,.footer{
+    display: grid;
+    background-color: #FFF;
+    border: 1px solid black;
+}
+
+.main-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px 15px;
-    grid-auto-rows: minmax(150px, auto);
     grid-template-areas: 
-    "item1 item1 item1"
-    "item2 item2 item3"
-    "item2 item2 item4"
-    "item5 item5 item5"
-    "item6 item7 item7"
-    "item8 item7 item7"
-    "item9 item9 item9"
+    "item1 item2 item3"
+    "item4 item4 item4"
+    "item5 item5 item6"
     ;
+    grid-auto-rows: minmax(200px, auto);
 }
 
 .item{
-    background-color: #fff;
+    background-color: #FFF;
     border: 2px solid black;
-    font-size: 30px;
+    margin: 5px
 }
 
 .item1{
@@ -39,21 +45,20 @@
 .item3{
     grid-area: item3;
 }
+
 .item4{
     grid-area: item4;
 }
+
 .item5{
     grid-area: item5;
 }
+
 .item6{
     grid-area: item6;
 }
-.item7{
-    grid-area:item7;
-}
-.item8{
-    grid-area: item8;
-}
-.item9{
-    grid-area: item9;
+
+.paragraph{
+    font-size: 20px;
+    font-weight: 300;
 }
