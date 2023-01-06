@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header,.footer{
+    display: flex;
+    background-color: #333;
+    flex-wrap: wrap;
+    min-height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoHeader{
+    width: 200px;
+    padding: 10px;
+}
+
+.headerButtons{
+    margin: 10px;
+    padding: 5px;
+}
+
+.headerBtn{
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.headerBtn:hover{
+    border: 2px solid white;
+    background-color: #888;
+} 
+
+.sectionTitle{
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sectionSubtitle{
+    align-self: center;
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    grid-template-areas: 
+    "mainContentCards asideCards";
+    gap: 10px 15px;
+}
+.card{
+    height: 380px;
+    width: 280px;
+    border: 2px solid transparent;
+    transition: 0.4s;
+    border-radius: 10px;
+}
+
+.imgSectionCard{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.imgAsideCard{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}   
+
+
+.asideCards{
+    background-color: #333;
+    color: white;
+}
+
+.asideCard{
+    border: 2px solid transparent;
+    transition: 0.4s;
+    border-radius: 10px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.asideCard:hover,.card:hover{
+    border: 2px solid #999;
+}
+
+.mainContentCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: mainContentCards;
+}
+
+.cardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+}
+
+.cardDescription{
+    padding: 6px;   
+}
+
